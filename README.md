@@ -1,5 +1,5 @@
 # koTextAug
-Korean text Augmentation PyPI package for NLP
+한국어 텍스트 데이터 증강을 위한 PyPI 패키지
 
 ## Installation
 - S/W 다운로드 기반 설치 및 사용
@@ -42,16 +42,22 @@ aug.question([comment,0], sent=['일반','혐오'], domain='댓글')
 
 ### 증강 기법 설명
 - randomSwap(comment, n): 문장(comment)과 swap 횟수(n)를 입력으로 받는다.
+  - 문장을 토크나이징 한 후 랜덤하게 토큰을 선택해 n번의 swap을 진행해 새로운 문장을 만든다. *konlpy 필요
   - return: "지금는 입니다 텍스트 증강 패키지 작성중나." <br>
 - randomDeletion(comment, p): 문장(comment)과 삭제 확률(p)를 입력으로 받는다.<br>
+  - 문장을 토크나이징 한 후 p의 확률로 토큰을 삭제해 새로운 문장을 만든다. *konlpy 필요
   - return: "나는 지금 텍스트 패키지 작성중" <br>
 - randomInsertion(comment, n): 문장(comment)과 삽입될 단어 개수(n)을 입력으로 받는다.<br>
+  - 문장을 토크나이징 한 후 n개의 토큰을 랜덤하게 선택해 해당 토큰의 유의어를 랜덤한 위치에 삽입해 새로운 문장을 만든다. *konlpy 필요
   - return: "이제 나는 지금 텍스트 증강 패키지 현재 작성중입니다."<br>
 - synonymReplacement(comment, n): 문장(comment)과 대체될 단어 개수(n)을 입력으로 받는다.<br>
+  - 문장을 토크나이징 한 후 랜덤하게 n개의 토큰을 선택해 유의어로 치환해 새로운 문장을 만든다. *konlpy 필요
   - return: "나는 지금 텍스트 증강 패키지 작어입니다." 
 - backTranslation(comment, lang): 문장(comment)과 번역될 중간 언어(lang)를 입력으로 받는다.
+  - 문장을 kor -> lang -> kor 순으로 번역해 새로운 문장을 만든다. *googletrans 필요
   - return: "현재 텍스트 확대 패키지를 작성 중입니다."<br>
 - question([comment,label], sent, domain): 문장(comment)과 라벨(label)의 리스트와 클래스(sent), 도메인(domain)을 입력으로 받는다. *[논문 참고](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)
+  - 문장을 입력받은 클래스로 질문을 만들고, 라벨로 답변 라벨을 재구성해 새로운 형태로 증강한다.
   - return: [['나는 지금 텍스트 증강 패키지 작성중입니다.', '해당 댓글은 일반 댓글입니까?', 1], ['나는 지금 텍스
 트 증강 패키지 작성중입니다.', '해당 댓글은 혐오 댓글입니까?', 0]]<br> 
 <br>
