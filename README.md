@@ -39,5 +39,5 @@ aug.question(comment, sent=['일반','혐오'], domain='댓글')
 - synonymReplacement(comment, n): 문장(comment)과 대체될 단어 개수(n)을 입력으로 받는다.<br>
 
 - backTranslation(comment, lang): 문장(comment)과 번역될 중간 언어(lang)를 입력으로 받는다.<br>
-- question(comment, sent, domain): 문장(comment)과 클래스(sent), 도메인(domain)을 입력으로 받는다. [논문 참고](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)
+- question(comment, sent, domain): 문장(comment)과 클래스(sent), 도메인(domain)을 입력으로 받는다. *[논문 참고](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)
 <br> 
