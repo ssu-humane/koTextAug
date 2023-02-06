@@ -37,6 +37,6 @@ aug.question(comment, sent=['일반','혐오'], domain='댓글')
 - randomDeletion(comment, p): 문장(comment)과 삭제 확률(p)를 입력으로 받는다.<br>
 - randomInsertion(comment, n): 문장(comment)과 삽입될 단어 개수(n)을 입력으로 받는다.<br>
 - synonymReplacement(comment, n): 문장(comment)과 대체될 단어 개수(n)을 입력으로 받는다.<br>
-<br>
+
 - backTranslation(comment, lang): 문장(comment)과 번역될 중간 언어(lang)를 입력으로 받는다.<br>
 - question(comment, sent, domain): 문장(comment)과 클래스(sent), 도메인(domain)을 입력으로 받는다.<br>
