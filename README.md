@@ -74,7 +74,7 @@ aug.question([comment,0], sent=['일반','혐오'], domain='댓글')
 - **question**([comment,label], sent, domain)
   - 문장(comment)과 라벨(label)의 리스트와 클래스(sent), 도메인(domain)을 입력으로 받는다. 
   - 문장을 입력받은 클래스로 질문을 만들고, 라벨로 답변 라벨을 재구성해 새로운 형태로 증강한다.
-  - [자세한 내용은 논문 참고](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)
+  - 자세한 내용은 [논문](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862) 참고 바람
   ```
   [['나는 지금 텍스트 증강 패키지 작성중입니다.', '해당 댓글은 일반 댓글입니까?', 1], ['나는 지금 텍스트 증강 패키지 작성중입니다.', '해당 댓글은 혐오 댓글입니까?', 0]]
   ```
