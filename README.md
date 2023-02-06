@@ -10,6 +10,14 @@ Korean text Augmentation PyPI package for NLP
   ```
   - 위 명령어로 koTextAug 패키지 설치
 
+## requirements
+- konlpy
+- requests
+- beautifulsoup4
+- googletrans==3.1.0a0
+- pandas
+- numpy
+
 ## Usage
 - expample <br>
 ```
@@ -22,22 +30,29 @@ comment = "나는 지금 텍스트 증강 패키지 작성 중입니다."
 aug.randomSwap(comment, n=2)
 aug.randomDeletion(comment, p=0.2)
 aug.randomInsertion(comment, n=2)
-aug.synonymReplacement(comment, n=2)
+aug.synonymReplacement(comment, n=1)
 
 # 역번역
 aug.backTranslation(comment, lang='en')
 
 # 질문 형태의 증강 기법
-aug.question(comment, sent=['일반','혐오'], domain='댓글')
+aug.question([comment,0], sent=['일반','혐오'], domain='댓글')
 ```
 - **Augmention** 클래스는 *mode*와 *tokenizer*를 인자로 받는다. 여기서 mode는 총 4가지로 "whole", "trans", "token", "no-package" 어떤 증강 기법을 사용할 것이냐에 따라 선택될 수 있다. trans는 역번역 사용시(googletrans package 필요), token은 EDA 증강 기법 사용시(konlpy 필요), no-package는 question 증강 기법만 사용하려 할 때, whole은 모든 증강 기법 사용시 설정한다. <br>tokenizer는 whole, token 모드에서 필요로 되며, konlpy에서 제공하는 토크나이저로 지정 가능하다.
 
 ### 증강 기법 설명
-- randomSwap(comment, n): 문장(comment)과 swap 횟수(n)를 입력으로 받는다.<br>
+- randomSwap(comment, n): 문장(comment)과 swap 횟수(n)를 입력으로 받는다.
+  - return: "지금는 입니다 텍스트 증강 패키지 작성중나." <br>
 - randomDeletion(comment, p): 문장(comment)과 삭제 확률(p)를 입력으로 받는다.<br>
+  - return: "나는 지금 텍스트 패키지 작성중" <br>
 - randomInsertion(comment, n): 문장(comment)과 삽입될 단어 개수(n)을 입력으로 받는다.<br>
+  - return: "이제 나는 지금 텍스트 증강 패키지 현재 작성중입니다."<br>
 - synonymReplacement(comment, n): 문장(comment)과 대체될 단어 개수(n)을 입력으로 받는다.<br>
-
-- backTranslation(comment, lang): 문장(comment)과 번역될 중간 언어(lang)를 입력으로 받는다.<br>
-- question(comment, sent, domain): 문장(comment)과 클래스(sent), 도메인(domain)을 입력으로 받는다. *[논문 참고](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)
-<br> 
+  - return: "나는 지금 텍스트 증강 패키지 작어입니다." 
+- backTranslation(comment, lang): 문장(comment)과 번역될 중간 언어(lang)를 입력으로 받는다.
+  - return: "현재 텍스트 확대 패키지를 작성 중입니다."<br>
+- question([comment,label], sent, domain): 문장(comment)과 라벨(label)의 리스트와 클래스(sent), 도메인(domain)을 입력으로 받는다. *[논문 참고](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)
+  - return: [['나는 지금 텍스트 증강 패키지 작성중입니다.', '해당 댓글은 일반 댓글입니까?', 1], ['나는 지금 텍스
+트 증강 패키지 작성중입니다.', '해당 댓글은 혐오 댓글입니까?', 0]]<br> 
+<br>
+- 입력 문장과 증강 후 문장이 동일할 경우 반환값이 없습니다.
