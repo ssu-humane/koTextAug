@@ -11,22 +11,22 @@ pip install koTextAug
 위 명령어로 koTextAug 패키지 설치 후 사용
 
 # Usage
-- expample
+- expample <br>
 '''
 from KoTextAug import Augmentation
-
-aug = Augmentation(mode='whole', tokenizer='okt')
+<br>
+aug = Augmentation(mode='whole', tokenizer='okt')<br>
 comment = "나는 지금 텍스트 증강 패키지 작성 중입니다."
-
-\# Easy Data Augmention 기법
-aug.randomSwap(comment, n=2)
-aug.randomDeletion(comment, p=0.2)
-aug.randomInsertion(comment, n=2)
-aug.synonymReplacement(comment, n=2)
-
-\# 역번역
-aug.backTranslation(comment, lang='en')
-
-\# 질문 형태의 증강 기법
+<br>
+\# Easy Data Augmention 기법<br>
+aug.randomSwap(comment, n=2)<br>
+aug.randomDeletion(comment, p=0.2)<br>
+aug.randomInsertion(comment, n=2)<br>
+aug.synonymReplacement(comment, n=2)<br>
+<br>
+\# 역번역<br>
+aug.backTranslation(comment, lang='en')<br>
+<br>
+\# 질문 형태의 증강 기법<br>
 aug.question(comment, sent=['일반','혐오'], domain='댓글')
 '''
