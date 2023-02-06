@@ -19,7 +19,7 @@
 - numpy
 
 ## Usage
-- expample <br>
+### expample <br>
 ```
 from KoTextAug import Augmentation
 
