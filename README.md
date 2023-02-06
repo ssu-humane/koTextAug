@@ -19,7 +19,7 @@
 - numpy
 
 ## Usage
-### expample <br>
+### Expample <br>
 ```
 from KoTextAug import Augmentation
 
@@ -39,8 +39,8 @@ aug.backTranslation(comment, lang='en')
 aug.question([comment,0], sent=['일반','혐오'], domain='댓글')
 ```
 - **Augmention** 클래스는 *mode*와 *tokenizer*를 인자로 받는다. 여기서 mode는 총 4가지로 "whole", "trans", "token", "no-package" 어떤 증강 기법을 사용할 것이냐에 따라 선택될 수 있다. trans는 역번역만 사용시(googletrans package 필요), token은 EDA 증강 기법만 사용시(konlpy 필요), no-package는 question 증강 기법만 사용하고자 할 때, whole은 모든 증강 기법 사용시 설정한다. <br>tokenizer는 whole, token 모드에서 필요로 되며, konlpy에서 제공하는 토크나이저로 지정 가능하다.
-
-### 증강 기법 설명
+<br>
+### Description
 - **randomSwap**(comment, n)
   - 문장(comment)과 swap 횟수(n)를 입력으로 받는다.
   - 문장을 토크나이징 한 후 랜덤하게 토큰을 선택해 n번의 swap을 진행해 새로운 문장을 만든다.
@@ -72,8 +72,9 @@ aug.question([comment,0], sent=['일반','혐오'], domain='댓글')
   현재 텍스트 확대 패키지를 작성 중입니다.
   ```
 - **question**([comment,label], sent, domain)
-  - 문장(comment)과 라벨(label)의 리스트와 클래스(sent), 도메인(domain)을 입력으로 받는다. *[논문 참고](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)
+  - 문장(comment)과 라벨(label)의 리스트와 클래스(sent), 도메인(domain)을 입력으로 받는다. 
   - 문장을 입력받은 클래스로 질문을 만들고, 라벨로 답변 라벨을 재구성해 새로운 형태로 증강한다.
+  - [자세한 내용은 논문 참고](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)
   ```
   [['나는 지금 텍스트 증강 패키지 작성중입니다.', '해당 댓글은 일반 댓글입니까?', 1], ['나는 지금 텍스트 증강 패키지 작성중입니다.', '해당 댓글은 혐오 댓글입니까?', 0]]
   ```
