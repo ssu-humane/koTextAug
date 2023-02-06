@@ -43,7 +43,10 @@ aug.question([comment,0], sent=['일반','혐오'], domain='댓글')
 ### 증강 기법 설명
 - randomSwap(comment, n): 문장(comment)과 swap 횟수(n)를 입력으로 받는다.
   - 문장을 토크나이징 한 후 랜덤하게 토큰을 선택해 n번의 swap을 진행해 새로운 문장을 만든다. *konlpy 필요
-  - return: "지금는 입니다 텍스트 증강 패키지 작성중나." <br>
+  ```
+  지금는 입니다 텍스트 증강 패키지 작성중나.
+  ```
+  <br>
 - randomDeletion(comment, p): 문장(comment)과 삭제 확률(p)를 입력으로 받는다.<br>
   - 문장을 토크나이징 한 후 p의 확률로 토큰을 삭제해 새로운 문장을 만든다. *konlpy 필요
   - return: "나는 지금 텍스트 패키지 작성중" <br>
