@@ -1,7 +1,7 @@
 # koTextAug
 Korean text Augmentation PyPI package for NLP
 
-# Installation
+## Installation
 - S/W 다운로드 기반 설치 및 사용
 해당 디렉토리 zip 다운로드 해 압축 해제 후 koTextAug 디렉토리 내에서 모듈 import 하여 사용
 - pip 기반 설치 및 사용
@@ -10,7 +10,7 @@ pip install koTextAug
 ```
 위 명령어로 koTextAug 패키지 설치 후 사용
 
-# Usage
+## Usage
 - expample <br>
 ```
 from KoTextAug import Augmentation
