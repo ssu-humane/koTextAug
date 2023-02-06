@@ -1,2 +1,2 @@
 # koTextAug
-Text Augmentation package for NLP
+Korean text Augmentation PyPI package for NLP
