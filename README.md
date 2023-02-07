@@ -5,7 +5,7 @@
 - 유의어 삽입
 - 랜덤 스와핑
 - 랜덤 삭제
-- 질문 형태의 증강
+- 질문 형태의 증강 ([논문](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862))
 
 ## Installation
 - S/W 다운로드 기반 설치
