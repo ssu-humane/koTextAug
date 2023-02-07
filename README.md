@@ -10,7 +10,7 @@
   ```
   - 위 명령어로 koTextAug 패키지 설치
 
-## requirements
+## Requirements
 - konlpy
 - requests
 - beautifulsoup4
