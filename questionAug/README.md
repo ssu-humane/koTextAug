@@ -1,7 +1,6 @@
 # Question-style data augmentation
 
-질문 형태의 데이터 증강 기법으로 해당 [논문](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862))에 제시된 기법을 실험할 수 있는 파일 제공
-
+Question-style data augmentation은 해당 [논문](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)에서 제시된 증강 기법으로 증강을 적용하지 않은 데이터로 학습된 모델 대비 향상된 성능을 불러옴
 ## Data
 - [Naver Sentiment Movie Corpus](https://github.com/e9t/nsmc) (NSMC)
   - 네이버의 영화 리뷰 데이터셋인 NSMC 일부 사용
