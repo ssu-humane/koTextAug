@@ -18,3 +18,5 @@ Question-style data augmentation은 해당 [논문](https://www.dbpia.co.kr/pdf/
 - pseudo question-style augmentation
   - pseudo 질문 형태의 증강을 적용한 데이터로 파인튜닝 진행 후 모델 평가
   - (부정적인, 긍정적인)을 pseudo question으로 사용
+
+\*실험은 colab 환경에서 진행됨
