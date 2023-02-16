@@ -1,5 +1,6 @@
 # Question-style data augmentation
 Question-style data augmentation은 해당 [논문](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)에서 제시된 증강 기법으로 질문 형태의 텍스트를 기존 텍스트에 추가하고 질문에 따른 새로운 라벨을 할당함으로써 데이터 증강을 가능케 함.
+<br>
 ![image](https://user-images.githubusercontent.com/80903024/219296524-4f45f5ea-fff7-474a-9734-cc76421e96ca.png)
 
 ## Data
@@ -23,4 +24,4 @@ Question-style data augmentation은 해당 [논문](https://www.dbpia.co.kr/pdf/
 \*실험은 colab 환경에서 진행됨
 
 ## Result
-![image](https://user-images.githubusercontent.com/80903024/219296255-c9f073b5-8be6-4995-9393-04d48294ac0a.png)
+![image](https://user-images.githubusercontent.com/80903024/219296255-c9f073b5-8be6-4995-9393-04d48294ac0a.png){: width="100" height="100"}
