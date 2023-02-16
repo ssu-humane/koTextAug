@@ -15,14 +15,14 @@ Question-style data augmentation은 해당 [논문](https://www.dbpia.co.kr/pdf/
 - baseline 
   - [nsmc_koelectra_base.ipynb](https://github.com/ssu-humane/koTextAug/blob/main/questionAug/nsmc_koelectra_base.ipynb)
   - 질문 형태의 증강을 적용하지 않은 데이터로 파인튜닝 진행 후 모델 평가
-- complete question-style augmentation 
-  - [nsmc_koelectra_pseudo_question.ipynb](https://github.com/ssu-humane/koTextAug/blob/main/questionAug/nsmc_koelectra_pseudo_question.ipynb)
-  - 완전한 질문 형태의 증강을 적용한 데이터로 파인튜닝 진행 후 모델 평가
-  - (해당 리뷰는 부정 리뷰입니까?, 해당 리뷰는 긍정 리뷰입니까?)를 complete question으로 사용
 - pseudo question-style augmentation 
-  - [nsmc_koelectra_complete_question.ipynb](https://github.com/ssu-humane/koTextAug/blob/main/questionAug/nsmc_koelectra_complete_question.ipynb)
+  - [nsmc_koelectra_pseudo_question.ipynb](https://github.com/ssu-humane/koTextAug/blob/main/questionAug/nsmc_koelectra_pseudo_question.ipynb)
   - pseudo 질문 형태의 증강을 적용한 데이터로 파인튜닝 진행 후 모델 평가
   - (부정적인, 긍정적인)을 pseudo question으로 사용
+- complete question-style augmentation 
+  - [nsmc_koelectra_complete_question.ipynb](https://github.com/ssu-humane/koTextAug/blob/main/questionAug/nsmc_koelectra_complete_question.ipynb)
+  - 완전한 질문 형태의 증강을 적용한 데이터로 파인튜닝 진행 후 모델 평가
+  - (해당 리뷰는 부정 리뷰입니까?, 해당 리뷰는 긍정 리뷰입니까?)를 complete question으로 사용
 
 \*실험은 colab 환경에서 진행됨
 
