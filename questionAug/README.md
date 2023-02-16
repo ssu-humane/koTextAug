@@ -20,3 +20,6 @@ Question-style data augmentation은 해당 [논문](https://www.dbpia.co.kr/pdf/
   - (부정적인, 긍정적인)을 pseudo question으로 사용
 
 \*실험은 colab 환경에서 진행됨
+
+## Result
+![image](https://user-images.githubusercontent.com/80903024/219294991-d0727378-e741-42ad-9178-e80af39c7e37.png)
