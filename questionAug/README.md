@@ -24,4 +24,4 @@ Question-style data augmentation은 해당 [논문](https://www.dbpia.co.kr/pdf/
 \*실험은 colab 환경에서 진행됨
 
 ## Result
-<p align="center"><img src="https://user-images.githubusercontent.com/80903024/219298086-581844ad-cb07-4684-b16d-37bab1c51dec.PNG" width="50%" height="50%"></p>
+<img src="https://user-images.githubusercontent.com/80903024/219298086-581844ad-cb07-4684-b16d-37bab1c51dec.PNG" width="50%" height="50%">
