@@ -1,7 +1,7 @@
 # Question-style data augmentation
 Question-style data augmentation은 해당 [논문](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11113862)에서 제시된 증강 기법으로 질문 형태의 텍스트를 기존 텍스트에 추가하고 질문에 따른 새로운 라벨을 할당함으로써 데이터 증강을 가능케 함.
 <br>
-![image](https://user-images.githubusercontent.com/80903024/219296524-4f45f5ea-fff7-474a-9734-cc76421e96ca.png)
+![figure](https://user-images.githubusercontent.com/80903024/219297928-70c46c21-3cb9-4088-97e2-53dfedb7838c.PNG)
 
 ## Data
 - [Naver Sentiment Movie Corpus](https://github.com/e9t/nsmc) (NSMC)
